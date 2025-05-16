@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "682608b3a22e5f837bbbab67"
+  },
+  "name": "Stracci Law Group - Personal Injury Attorneys Indiana",
+  "keys": [
+    "personal injury attorney near me"
+  ],
+  "coordinates": {
+    "latitude": 41.40196356092992,
+    "longitude": -87.33628411137033
+  },
+  "pointsData": [
+    "682608b3a22e5f837bbbab69"
+  ],
+  "competitorsAnalysisId": "682608b3a22e5f837bbbab6d",
+  "create_date": {
+    "$date": "2025-05-15T15:30:59.379Z"
+  },
+  "update_date": {
+    "$date": "2025-05-15T15:30:59.379Z"
+  },
+  "__v": 1
+}]

@@ -1,0 +1,382 @@
+/* Основные стили */
+body {
+    background-color: #f5f8fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+    font-weight: 600;
+}
+
+/* Таблицы */
+.table {
+    width: 100%;
+}
+
+.table th {
+    font-weight: 600;
+    background-color: #f8f9fa;
+}
+
+.dataTables_wrapper {
+    padding: 0;
+}
+
+/* Стили для рангов */
+.rank-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    text-align: center;
+    min-width: 40px;
+    transition: transform 0.15s ease;
+}
+
+.rank-badge:hover {
+    transform: scale(1.05);
+}
+
+.rank-1 {
+    background-color: #28a745;
+    color: white;
+}
+
+.rank-2-3 {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.rank-4-10 {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.rank-11-20 {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.rank-20-plus {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Карта */
+#positionsMap, #modalPositionsMap {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+
+.map-marker {
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.map-marker:hover {
+    transform: scale(1.2);
+    z-index: 1000;
+}
+
+.map-marker-tooltip {
+    font-size: 12px;
+    padding: 5px 8px;
+}
+
+/* Легенда карты */
+.map-legend {
+    font-size: 12px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+/* Кнопки */
+.btn-action {
+    padding: 2px 8px;
+    margin: 0 2px;
+    font-size: 0.8rem;
+}
+
+/* Поле поиска */
+#modalKeywordSearch {
+    max-width: 300px;
+}
+
+/* Группировка маркеров */
+.marker-cluster {
+    background-color: rgba(38, 143, 255, 0.6);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Анимации */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-in {
+    animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Индикатор загрузки */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Улучшения для таблиц */
+.gridjs-tbody tr {
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.gridjs-tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Дополнительные классы для интерактивности */
+.hoverable-row {
+    transition: all 0.2s ease;
+}
+
+.row-active {
+    background-color: rgba(0, 123, 255, 0.2) !important;
+    transform: translateY(0) !important;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Статистика */
+.card.bg-light {
+    background-color: #f8f9fa;
+    border: none;
+}
+
+.card.bg-light .card-body {
+    padding: 1.25rem;
+}
+
+.card.bg-light h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Иконки и индикаторы */
+.trend-up {
+    color: #28a745;
+    animation: pulseGreen 1.5s infinite;
+}
+
+.trend-down {
+    color: #dc3545;
+    animation: pulseRed 1.5s infinite;
+}
+
+.trend-neutral {
+    color: #6c757d;
+}
+
+@keyframes pulseGreen {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+@keyframes pulseRed {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+/* Прогресс */
+.progress {
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 4px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    border-radius: 4px;
+}
+
+/* Отзывчивый дизайн */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .card-header {
+        padding: 0.75rem;
+    }
+    
+    #keywordFilter, #positionsKeywordFilter {
+        width: 100%;
+        margin-top: 0.5rem;
+        float: none !important;
+    }
+    
+    .card.bg-light h4 {
+        font-size: 1.2rem;
+    }
+    
+    .gridjs-tbody tr:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .card-body {
+        padding: 0.75rem;
+    }
+    
+    .row .col-md-3 {
+        margin-bottom: 1rem;
+    }
+    
+    .gridjs-table {
+        font-size: 0.85rem;
+    }
+    
+    .gridjs-th:nth-child(4), .gridjs-td:nth-child(4),
+    .gridjs-th:nth-child(5), .gridjs-td:nth-child(5) {
+        display: none;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    #positionsMap {
+        height: 250px;
+    }
+    
+    select.form-select {
+        font-size: 0.9rem;
+    }
+}
+
+/* Модальное окно */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+.modal-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+#keywordsTable .gridjs-tbody tr {
+    cursor: pointer;
+}
+
+#keywordsTable .gridjs-tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1) !important;
+    transform: translateY(-1px);
+}
+
+#keywordsTable .gridjs-tbody tr.row-active {
+    background-color: rgba(0, 123, 255, 0.2) !important;
+}
+
+/* Экспорт CSV кнопка */
+#exportCsvBtn {
+    transition: all 0.2s ease;
+}
+
+#exportCsvBtn:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Новые стили для поиска и фильтрации */
+.input-group-text {
+    background-color: #f8f9fa;
+    border-right: none;
+}
+
+#modalKeywordSearch {
+    border-left: none;
+}
+
+#modalKeywordSearch:focus {
+    box-shadow: none;
+} 

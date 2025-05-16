@@ -1,0 +1,720 @@
+[{
+  "_id": {
+    "$oid": "682608b3a22e5f837bbbab69"
+  },
+  "subject": "Stracci Law Group - Personal Injury Attorneys Indiana",
+  "key": "personal injury attorney near me",
+  "point": {
+    "latitude": 41.40196356092992,
+    "longitude": -87.33628411137033
+  },
+  "competitors": [
+    {
+      "coordinates": {
+        "lat": 41.47442732904587,
+        "lng": -87.28798062635995
+      },
+      "competitors": [
+        "Lerner and Rowe Injury Attorneys",
+        "Allen Law Group",
+        "Law Offices of David W. Holub",
+        "Theodoros & Rooth, P.C.",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Blackburn Romey",
+        "Hilbrich Law Firm",
+        "Sarkisian Law Offices",
+        "Hassuneh Law Firm",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Alvarez Law Offices",
+        "Schiller Law Offices",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Schlyer & Associates P.C.",
+        "Kenneth J. Allen",
+        "Thiros & Thiros Attorneys at Law",
+        "Moseley & Martinez Accident & Injury Lawyers",
+        "Wilson & Novak Law Offices"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.32949979281398,
+        "lng": -87.23967714134957
+      },
+      "competitors": [
+        "Galvan Law LLC",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Joe May Law",
+        "Lerner and Rowe Injury Attorneys",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Law Office of Giorgi & Bebekoski",
+        "Law Offices of David W. Holub",
+        "Law Office of Robin Remley LLC",
+        "Theodoros & Rooth, P.C.",
+        "Miller Sachs & Hess P.C.",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Alvarez Law Offices",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Sarkisian Law Offices",
+        "Allen Law Group",
+        "Sarkisian Sarkisian & Associates P.C.",
+        "Gladish Law Group",
+        "The Region Lawyers",
+        "Sarkisian Sarkisian & Associates P.C."
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.47442732904587,
+        "lng": -87.43289108139109
+      },
+      "competitors": [
+        "Wruck Paupore PC Injury Lawyers",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Blackburn Romey",
+        "Tauber Law Offices",
+        "Law Offices of David W. Holub",
+        "Kelly Law Offices",
+        "Rubino, Ruman, Crosmer, & Polen",
+        "Tanzillo Stassin & Babcock, P.C.",
+        "Lerner and Rowe Injury Attorneys",
+        "Alvarez Law Offices",
+        "Attorney Michael D. Babcock",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Law Office of Karl E. Hand, P.C.",
+        "Semko Law Office LLC",
+        "Brian Smith Law Group, P.C.",
+        "Arshad, Pangere & Warring, LLP",
+        "Pavich Law Group, P.C.",
+        "Attorney Andrew Tanzillo",
+        "Michael J. Troumouliaris, Attorney at Law",
+        "Custy Law Firm | Accident & Injury Lawyers"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.32949979281398,
+        "lng": -87.43289108139109
+      },
+      "competitors": [
+        "Law Office of Paul A. Rossi, LLC",
+        "Jostes & Glynn, LLP",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Stout Law Firm",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Calhoun Law",
+        "Lerner and Rowe Injury Attorneys",
+        "Vis Law, LLC, Attorney at Law",
+        "Law Office of Robin Remley LLC",
+        "Law Office of Giorgi & Bebekoski",
+        "Gladish Law Group",
+        "Hilbrich Law Firm",
+        "Miller Sachs & Hess P.C.",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Law Offices of David W. Holub",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Wruck Paupore PC Injury Lawyers",
+        "Theodoros & Rooth, P.C.",
+        "Alvarez Law Offices"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.47442732904587,
+        "lng": -87.23967714134957
+      },
+      "competitors": [
+        "Allen Law Group",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Sarkisian Law Offices",
+        "Hassuneh Law Firm",
+        "Kenneth J. Allen",
+        "Moseley & Martinez Accident & Injury Lawyers",
+        "Kevin W. Marshall, Attorney At Law",
+        "Lerner and Rowe Injury Attorneys",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Theodoros & Rooth, P.C.",
+        "Robert A. Plantz & Associates, LLC",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Law Offices of David W. Holub",
+        "Thiros & Thiros Attorneys at Law",
+        "Law Office of Roy Dominguez",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Schlyer & Associates P.C.",
+        "Burke Costanza & Carberry LLP",
+        "Todd Uzelac Law, LLC",
+        "Irak Law Office: Joseph S. Irak and Christopher J. Irak, Attorneys at Law"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.40196356092992,
+        "lng": -87.28798062635995
+      },
+      "competitors": [
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Hilbrich Law Firm",
+        "Gladish Law Group",
+        "Calhoun Law",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Alvarez Law Offices",
+        "Law Office of Robin Remley LLC",
+        "Irak Law Office: Joseph S. Irak and Christopher J. Irak, Attorneys at Law",
+        "Brian Smith Law Group, P.C.",
+        "The Region Lawyers",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Steven Alvarez",
+        "Law Office of Giorgi & Bebekoski",
+        "Hortsman & Campanelli",
+        "Burke Costanza & Carberry LLP",
+        "Miller Sachs & Hess P.C.",
+        "Campbell Law PC",
+        "Kutanovski Law Offices",
+        "Austgen Kuiper Jasaitis P.C."
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.36573167687195,
+        "lng": -87.33628411137033
+      },
+      "competitors": [
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Law Office of Giorgi & Bebekoski",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Miller Sachs & Hess P.C.",
+        "Calhoun Law",
+        "Allen Law Offices",
+        "Gladish Law Group",
+        "Hilbrich Law Firm",
+        "Harris Law Firm",
+        "Mullen And Associates, P.C.",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Lerner and Rowe Injury Attorneys",
+        "George C Patrick & Associates",
+        "Nicholls & Nicholls, Attorneys At Law",
+        "Alvarez Law Offices",
+        "Theodoros & Rooth, P.C.",
+        "Law Offices of David W. Holub",
+        "Kent A. Jeffirs, Attorney at Law, PC",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.40196356092992,
+        "lng": -87.38458759638071
+      },
+      "competitors": [
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Hilbrich Law Firm",
+        "Gladish Law Group",
+        "Calhoun Law",
+        "Alvarez Law Offices",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Law Office of Robin Remley LLC",
+        "Brian Smith Law Group, P.C.",
+        "Irak Law Office: Joseph S. Irak and Christopher J. Irak, Attorneys at Law",
+        "Steven Alvarez",
+        "Law Office of Giorgi & Bebekoski",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Miller Sachs & Hess P.C.",
+        "Hortsman & Campanelli",
+        "Burke Costanza & Carberry LLP",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Theodoros & Rooth, P.C.",
+        "George C Patrick & Associates",
+        "Kutanovski Law Offices"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.43819544498789,
+        "lng": -87.33628411137033
+      },
+      "competitors": [
+        "Lerner and Rowe Injury Attorneys",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Allen Law Group",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Law Offices of David W. Holub",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Theodoros & Rooth, P.C.",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Blackburn Romey",
+        "Hilbrich Law Firm",
+        "Gladish Law Group",
+        "Calhoun Law",
+        "Sarkisian Law Offices",
+        "Hassuneh Law Firm",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Moseley & Martinez Accident & Injury Lawyers",
+        "Alvarez Law Offices",
+        "Law Office of Robin Remley LLC",
+        "Schlyer & Associates P.C."
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.36573167687195,
+        "lng": -87.28798062635995
+      },
+      "competitors": [
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Law Office of Giorgi & Bebekoski",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Miller Sachs & Hess P.C.",
+        "Calhoun Law",
+        "Law Office of Robin Remley LLC",
+        "Allen Law Offices",
+        "Gladish Law Group",
+        "Hilbrich Law Firm",
+        "Sendak, Stamper & Kacmarik",
+        "Mullen And Associates, P.C.",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Lerner and Rowe Injury Attorneys",
+        "George C Patrick & Associates",
+        "Nicholls & Nicholls, Attorneys At Law",
+        "Alvarez Law Offices",
+        "Theodoros & Rooth, P.C.",
+        "Law Offices of David W. Holub",
+        "Kent A. Jeffirs, Attorney at Law, PC",
+        "Law Office of Cristin Just"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.43819544498789,
+        "lng": -87.38458759638071
+      },
+      "competitors": [
+        "Lerner and Rowe Injury Attorneys",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Law Offices of David W. Holub",
+        "Theodoros & Rooth, P.C.",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Blackburn Romey",
+        "Hilbrich Law Firm",
+        "Gladish Law Group",
+        "Calhoun Law",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Alvarez Law Offices",
+        "Law Office of Robin Remley LLC",
+        "Schlyer & Associates P.C.",
+        "Burke Costanza & Carberry LLP",
+        "Thiros & Thiros Attorneys at Law",
+        "Law Office of Roy Dominguez",
+        "Irak Law Office: Joseph S. Irak and Christopher J. Irak, Attorneys at Law",
+        "Brian Smith Law Group, P.C."
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.36573167687195,
+        "lng": -87.38458759638071
+      },
+      "competitors": [
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Law Office of Giorgi & Bebekoski",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Calhoun Law",
+        "Miller Sachs & Hess P.C.",
+        "Jostes & Glynn, LLP",
+        "Allen Law Offices",
+        "Gladish Law Group",
+        "Vis Law, LLC, Attorney at Law",
+        "Hilbrich Law Firm",
+        "Mullen And Associates, P.C.",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Lerner and Rowe Injury Attorneys",
+        "Nicholls & Nicholls, Attorneys At Law",
+        "Alvarez Law Offices",
+        "Theodoros & Rooth, P.C.",
+        "Law Offices of David W. Holub",
+        "Kent A. Jeffirs, Attorney at Law, PC",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.40196356092992,
+        "lng": -87.33628411137033
+      },
+      "competitors": [
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Hilbrich Law Firm",
+        "Gladish Law Group",
+        "Calhoun Law",
+        "Alvarez Law Offices",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Law Office of Robin Remley LLC",
+        "Brian Smith Law Group, P.C.",
+        "Irak Law Office: Joseph S. Irak and Christopher J. Irak, Attorneys at Law",
+        "Steven Alvarez",
+        "Law Office of Giorgi & Bebekoski",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Miller Sachs & Hess P.C.",
+        "Burke Costanza & Carberry LLP",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Theodoros & Rooth, P.C.",
+        "George C Patrick & Associates",
+        "Kutanovski Law Offices",
+        "Todd Uzelac Law, LLC"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.43819544498789,
+        "lng": -87.28798062635995
+      },
+      "competitors": [
+        "Lerner and Rowe Injury Attorneys",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Allen Law Group",
+        "Law Offices of David W. Holub",
+        "Theodoros & Rooth, P.C.",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Blackburn Romey",
+        "Hilbrich Law Firm",
+        "Gladish Law Group",
+        "Sarkisian Law Offices",
+        "Calhoun Law",
+        "Hassuneh Law Firm",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Alvarez Law Offices",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Schlyer & Associates P.C.",
+        "Kenneth J. Allen",
+        "Thiros & Thiros Attorneys at Law"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.40196356092992,
+        "lng": -87.23967714134957
+      },
+      "competitors": [
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Hilbrich Law Firm",
+        "Theodoros & Rooth, P.C.",
+        "Lerner and Rowe Injury Attorneys",
+        "Thiros & Thiros Attorneys at Law",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Law Offices of David W. Holub",
+        "The Region Lawyers",
+        "Irak Law Office: Joseph S. Irak and Christopher J. Irak, Attorneys at Law",
+        "Burke Costanza & Carberry LLP",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Todd Uzelac Law, LLC",
+        "Allen Law Group",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Alexander Lopez Atty At Law",
+        "Thomas Olson Attorney at Law",
+        "Law Office Of John Rupp, Llc.",
+        "Sarkisian Law Offices",
+        "Law Office of John M. Vazanellis"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.43819544498789,
+        "lng": -87.23967714134957
+      },
+      "competitors": [
+        "Allen Law Group",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Sarkisian Law Offices",
+        "Hassuneh Law Firm",
+        "Kenneth J. Allen",
+        "Moseley & Martinez Accident & Injury Lawyers",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Lerner and Rowe Injury Attorneys",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Theodoros & Rooth, P.C.",
+        "Robert A. Plantz & Associates, LLC",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Law Offices of David W. Holub",
+        "Thiros & Thiros Attorneys at Law",
+        "Law Office of Roy Dominguez",
+        "Schlyer & Associates P.C.",
+        "Burke Costanza & Carberry LLP",
+        "Todd Uzelac Law, LLC",
+        "Irak Law Office: Joseph S. Irak and Christopher J. Irak, Attorneys at Law",
+        "The Region Lawyers"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.32949979281398,
+        "lng": -87.28798062635995
+      },
+      "competitors": [
+        "Galvan Law LLC",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Lerner and Rowe Injury Attorneys",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Law Office of Robin Remley LLC",
+        "Law Office of Giorgi & Bebekoski",
+        "Law Offices of David W. Holub",
+        "Law Office of Paul A. Rossi, LLC",
+        "Theodoros & Rooth, P.C.",
+        "Miller Sachs & Hess P.C.",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Alvarez Law Offices",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Sarkisian Law Offices",
+        "Allen Law Group",
+        "Gladish Law Group",
+        "Austgen Kuiper Jasaitis P.C.",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.365731676871945,
+        "lng": -87.23967714134957
+      },
+      "competitors": [
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Galvan Law LLC",
+        "Hilbrich Law Firm",
+        "Law Office of Giorgi & Bebekoski",
+        "Lerner and Rowe Injury Attorneys",
+        "Miller Sachs & Hess P.C.",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Gladish Law Group",
+        "Etzler Lawhead Legal Group, PC",
+        "Calhoun Law",
+        "Theodoros & Rooth, P.C.",
+        "Law Offices of David W. Holub",
+        "Law Office of Robin Remley LLC",
+        "Alvarez Law Offices",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Allen Law Group",
+        "Sarkisian Law Offices",
+        "Gasparis & Zembillas, Attorneys At Law"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.32949979281398,
+        "lng": -87.33628411137033
+      },
+      "competitors": [
+        "Law Office of Paul A. Rossi, LLC",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Calhoun Law",
+        "Lerner and Rowe Injury Attorneys",
+        "Law Office of Robin Remley LLC",
+        "Law Office of Giorgi & Bebekoski",
+        "Gladish Law Group",
+        "Hilbrich Law Firm",
+        "Miller Sachs & Hess P.C.",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Galvan Law LLC",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Law Offices of David W. Holub",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Theodoros & Rooth, P.C.",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Allen Law Group",
+        "Alvarez Law Offices",
+        "Hortsman & Campanelli"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.32949979281398,
+        "lng": -87.38458759638071
+      },
+      "competitors": [
+        "Law Office of Paul A. Rossi, LLC",
+        "Jostes & Glynn, LLP",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Stout Law Firm",
+        "Calhoun Law",
+        "Lerner and Rowe Injury Attorneys",
+        "Gladish Law Group",
+        "Vis Law, LLC, Attorney at Law",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Law Office of Giorgi & Bebekoski",
+        "Hilbrich Law Firm",
+        "Law Offices of David W. Holub",
+        "Theodoros & Rooth, P.C.",
+        "Miller Sachs & Hess P.C.",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Alvarez Law Offices",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Wruck Paupore PC Injury Lawyers",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.36573167687195,
+        "lng": -87.43289108139109
+      },
+      "competitors": [
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Calhoun Law",
+        "Jostes & Glynn, LLP",
+        "Gladish Law Group",
+        "Law Office of Giorgi & Bebekoski",
+        "Vis Law, LLC, Attorney at Law",
+        "Miller Sachs & Hess P.C.",
+        "Hilbrich Law Firm",
+        "Mullen And Associates, P.C.",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Lerner and Rowe Injury Attorneys",
+        "Nicholls & Nicholls, Attorneys At Law",
+        "Allen Law Offices",
+        "Alvarez Law Offices",
+        "Theodoros & Rooth, P.C.",
+        "Law Offices of David W. Holub",
+        "Kent A. Jeffirs, Attorney at Law, PC",
+        "Wruck Paupore PC Injury Lawyers",
+        "Custy Law Firm | Accident & Injury Lawyers"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.40196356092992,
+        "lng": -87.43289108139109
+      },
+      "competitors": [
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Gladish Law Group",
+        "Calhoun Law",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Alvarez Law Offices",
+        "Law Office of Robin Remley LLC",
+        "Brian Smith Law Group, P.C.",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Steven Alvarez",
+        "Hortsman & Campanelli",
+        "Campbell Law PC",
+        "Kutanovski Law Offices",
+        "Austgen Kuiper Jasaitis P.C.",
+        "George C Patrick & Associates",
+        "Hilbrich Law Firm",
+        "Jostes & Glynn, LLP",
+        "Lerner and Rowe Injury Attorneys",
+        "Sendak, Stamper & Kacmarik",
+        "Law Offices of David W. Holub"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.4381954449879,
+        "lng": -87.43289108139109
+      },
+      "competitors": [
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Blackburn Romey",
+        "Gladish Law Group",
+        "Law Offices of David W. Holub",
+        "Calhoun Law",
+        "Lerner and Rowe Injury Attorneys",
+        "Alvarez Law Offices",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Wruck Paupore PC Injury Lawyers",
+        "Brian Smith Law Group, P.C.",
+        "Stracci Law Group - Personal Injury Attorneys Indiana",
+        "Steven Alvarez",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "The Law Office of Angela M. Jones, LLC",
+        "Gasparis & Zembillas, Attorneys At Law",
+        "Kelly Law Offices",
+        "Theodoros & Rooth, P.C.",
+        "Tanzillo Stassin & Babcock, P.C.",
+        "Attorney Michael D. Babcock",
+        "Law Office of Brian E. Less, PC"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.47442732904587,
+        "lng": -87.33628411137033
+      },
+      "competitors": [
+        "Lerner and Rowe Injury Attorneys",
+        "Allen Law Group",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Law Offices of David W. Holub",
+        "Schafer & Schafer LLP, Attorneys at Law",
+        "Theodoros & Rooth, P.C.",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Blackburn Romey",
+        "Hilbrich Law Firm",
+        "Sarkisian Law Offices",
+        "Hassuneh Law Firm",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Schiller Law Offices",
+        "Moseley & Martinez Accident & Injury Lawyers",
+        "Alvarez Law Offices",
+        "Gladish Law Group",
+        "Schlyer & Associates P.C.",
+        "Kenneth J. Allen",
+        "Burke Costanza & Carberry LLP"
+      ]
+    },
+    {
+      "coordinates": {
+        "lat": 41.47442732904587,
+        "lng": -87.38458759638071
+      },
+      "competitors": [
+        "Lerner and Rowe Injury Attorneys",
+        "Law Offices of David W. Holub",
+        "Theodoros & Rooth, P.C.",
+        "Law Offices of Shane O’Donnell, Northwest Indiana’s Premier Accident, Injury, and Criminal Defense Firm",
+        "Custy Law Firm | Accident & Injury Lawyers",
+        "Hilbrich Law Firm",
+        "Blackburn Romey",
+        "Kelly Law Offices",
+        "LaTulip Law Offices, P.C. Accident & Personal Injury Lawyers",
+        "Alvarez Law Offices",
+        "Schiller Law Offices",
+        "Gladish Law Group",
+        "Arlington J. Foley & Arlington J. Foley Jr. Attorneys at Law",
+        "Schlyer & Associates P.C.",
+        "Thiros & Thiros Attorneys at Law",
+        "Law Office of Karl E. Hand, P.C.",
+        "Law Office of Roy Dominguez",
+        "Burke Costanza & Carberry LLP",
+        "Wilson & Novak Law Offices",
+        "Semko Law Office LLC"
+      ]
+    }
+  ],
+  "create_date": {
+    "$date": "2025-05-15T15:30:59.553Z"
+  },
+  "update_date": {
+    "$date": "2025-05-15T15:30:59.553Z"
+  },
+  "__v": 0
+}]

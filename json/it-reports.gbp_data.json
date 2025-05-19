@@ -1,0 +1,382 @@
+[{
+  "_id": {
+    "$oid": "682b567963a0fe163f0ec729"
+  },
+  "type_id": {
+    "$oid": "682b55e863a0fe163f0ec651"
+  },
+  "type": "subject",
+  "week": "3_05_2025",
+  "name": "Stracci Law Group - Personal Injury Attorneys Indiana",
+  "website": "https://www.straccilaw.com/?utm_source=GBP&utm_medium=organic&utm_campaign=website",
+  "phone": "(219) 754-5534",
+  "sampleImage": "https://lh3.googleusercontent.com/p/AF1QipPJn7DikYKHXriTrGMQIsoqxiTassDKtKclyW_u=w408-h248-k-no",
+  "mainCategory": "Personal injury attorney",
+  "openingHours": {
+    "Monday": "8 AM to 5 PM",
+    "Tuesday": "8 AM to 5 PM",
+    "Wednesday": "8 AM to 5 PM",
+    "Thursday": "8 AM to 5 PM",
+    "Friday": "8 AM to 3:30 PM",
+    "Saturday": "Closed",
+    "Sunday": "Closed"
+  },
+  "address": "11890 Broadway, Crown Point, IN 46307",
+  "bookingLink": "https://www.straccilaw.com/contact-us?utm_source=GBP&utm_medium=organic&utm_campaign=appointment",
+  "timeZone": "CM27+QF Crown Point, Indiana",
+  "images": [
+    {
+      "name": "All",
+      "img": "https://lh3.googleusercontent.com/p/AF1QipPJn7DikYKHXriTrGMQIsoqxiTassDKtKclyW_u=w489-h298-k-no"
+    },
+    {
+      "name": "Inside",
+      "img": "https://lh3.googleusercontent.com/p/AF1QipPLai7u9hqRZzg58Mpt7je9NimGOsK-NcsTMT6t=w447-h298-k-no"
+    },
+    {
+      "name": "By owner",
+      "img": "https://lh3.googleusercontent.com/p/AF1QipO7BD1MJkV9fzCGpv2Lp8A8YSjxjY0fVUgxsvJE=w536-h298-k-no"
+    },
+    {
+      "name": "Street View & 360°",
+      "img": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=s5CgIVkv0VDD3bGaT1PBMw&cb_client=maps_sv.tactile.gps&w=224&h=298&yaw=286.24127&pitch=0&thumbfov=100"
+    }
+  ],
+  "rating": 4.9,
+  "reviewsCount": 314,
+  "reviewsKeywords": [
+      {
+          "key": "team",
+          "number": "27"
+      },
+      {
+          "key": "results",
+          "number": "25"
+      },
+      {
+          "key": "court",
+          "number": "15"
+      },
+      {
+          "key": "call",
+          "number": "12"
+      },
+      {
+          "key": "job",
+          "number": "11"
+      },
+      {
+          "key": "feel",
+          "number": "9"
+      },
+      {
+          "key": "stars",
+          "number": "6"
+      },
+      {
+          "key": "honesty",
+          "number": "5"
+      },
+      {
+          "key": "gratitude",
+          "number": "5"
+      }
+  ],
+  "reviews": [
+    {
+      "author": "Nadira Shatat",
+      "message": "I highly recommend this law firm—definitely a 10/10! Maryam Afshar was my attorney, and she was outstanding. She’s professional, thorough, and goes above and beyond for her clients. She’s also incredibly polite, humble, and easy to work …",
+      "number_stars": 5,
+      "date": "a month ago"
+    },
+    {
+      "author": "Samantha Burns",
+      "message": "Peter Fouts is an amazing attorney. He had over 10 cases and worked through them quickly and thoroughly. He is kind and helps you understand your case. I HIGHLY recommend using him if you need an attorney. He has dealt with my case for a …",
+      "number_stars": 5,
+      "date": "2 months ago"
+    },
+    {
+      "author": "Daniel",
+      "message": "I highly recommend Josh and Peter from Stracci law group. They represented me start to finish and did an amazing job. They handled everything professionally, insured that I understand the whole process and guided me to the best outcome possible. Do not hesitate to use Stracci law group, I’m glad I did.",
+      "number_stars": 5,
+      "date": "2 months ago"
+    },
+    {
+      "author": "Roberto Carlos",
+      "message": "I highly recommend Peter J. Fouts from Stracci Law Group. From start to finish, Peter was outstanding. His deep knowledge of the law, combined with his thorough review of all the evidence, allowed him to craft a well-thought-out strategy …",
+      "number_stars": 5,
+      "date": "3 months ago"
+    },
+    {
+      "author": "Bogoja Doneski",
+      "message": "Stracci Law Group is the Best firm to hire in a DUI case. Paul Stacci represented me and got me the best plea deal. I would Highly recommend Paul to be your lawyer if you picked up a criminal/injury case. The professionalism is unmatched.",
+      "number_stars": 5,
+      "date": "4 months ago"
+    },
+    {
+      "author": "vandana pagany",
+      "message": "Maryam Afshar-Stewart Is AMAZING! She has a great team, She will fight hard for you. I was very scared but she got me the best outcome I could of asked for.",
+      "number_stars": 5,
+      "date": "2 weeks ago"
+    },
+    {
+      "author": "Rolando Rodriguez",
+      "message": "I recently used Stracci Law for legal counsel for my case in Porter County & I am extremely satisfied with the outcome of my case. I was referred by Frankie and I don’t think I’ve ever received a better referral. Nichole & Peter Fouts were …",
+      "number_stars": 5,
+      "date": "3 months ago"
+    },
+    {
+      "author": "Arundhuti Dey",
+      "message": "I highly recommend Stracci Law Group for their professionalism, expertise, and dedication. From the very beginning, they took the time to explain my case thoroughly and provided clear guidance at every step. The team was always responsive, …",
+      "number_stars": 5,
+      "date": "7 months ago"
+    },
+    {
+      "author": "Jonathan Thien",
+      "message": "Let me start by saying these words and the high dollar amount of money spent will never amount to the respect and fight they have for you at Stracci Law. Maryam Ashfur-Stewart was way too pretty, to little, to happy to represent me  NOT. …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Matthew Meneghetti",
+      "message": "Paul Stracci and his staff was absolutely amazing.  Not only from the legal stand point but caring for my feelings and my family.  They Stracci Law Group are the best and recommend them big time.",
+      "number_stars": 5,
+      "date": "5 months ago"
+    },
+    {
+      "author": "Traci Djordjevic",
+      "message": "Let me start out by saying that Stracci-Law Group is a firm I would recommend to anyone in need of legal help. They were very professional, competent, attentive, and a responsible law firm. I am very pleased with the outcome of my case and …",
+      "number_stars": 5,
+      "date": "7 months ago"
+    },
+    {
+      "author": "Steve Medsker",
+      "message": "Maryam went above and beyond to understand my situation and fought to have it corrected. She willingly took the time to listen to me and was able to do what other lawyers told me wasn't possible! I am very grateful that she was my lawyer and I highly recommend her! Special thanks to Maryam!",
+      "number_stars": 5,
+      "date": "2 months ago"
+    },
+    {
+      "author": "Nicole B",
+      "message": "Maryam is AMAZING. She represented my fiance who was falsely accused for a felony he did not commit. She remained on top of the case and kept close communication with us both while being thorough, detailed, and caring. After 8 months of …",
+      "number_stars": 5,
+      "date": "4 months ago"
+    },
+    {
+      "author": "Caleb Carrier",
+      "message": "MaryRachel Was a wonder attorney to work with she made my whole case simple and stress free! She had my case dismissed ! Go with Stracci Law Group You will not regret it !",
+      "number_stars": 5,
+      "date": "3 months ago"
+    },
+    {
+      "author": "Erin Garcia",
+      "message": "I was full of fear and anxiety until I hired Mr. Stracci to take my case.  Not only did he get my license back to valid with 0pts but also got BOTH cases DISMISSED!  Hiring him was the best choice I could have ever done for myself.  He …",
+      "number_stars": 5,
+      "date": "a month ago"
+    },
+    {
+      "author": "Mason Gluth",
+      "message": "Phenomenal legal representation. These guys are PROs!!! I am extremely satisfied with the outcomes of my CASES (Laporte county & lake county), and the overall experience with Peter, Nichole, and the rest of Stracci. …",
+      "number_stars": 5,
+      "date": "8 months ago"
+    },
+    {
+      "author": "Jeffrey",
+      "message": "Oh do I have a story to tell! & Maryam with Stracci law is part of it.! Undeniable great services… Outstanding in their field of Law firms.. If you’re in trouble, & you know you don’t deserve the repercussions the state is trying to give …",
+      "number_stars": 5,
+      "date": "9 months ago"
+    },
+    {
+      "author": "Alexander Whu",
+      "message": "I don’t think I could ever thank Attorney Allison Benjamin and Paul Stracci for the expertise, and help during a major life altering moment. If it wasn’t for Attorney Allison Benjamin strong will, knowledge and determination to help me …",
+      "number_stars": 5,
+      "date": "8 months ago"
+    },
+    {
+      "author": "Jeffrey Olivares",
+      "message": "I have nothing but good things to say about this entire law firm. I had a very difficult time and Stracci Law Group not only made me feel like they had my back but I knew I wasn’t just another client, I mattered to them. I worked closely …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Julia Leahy",
+      "message": "When our family was faced with legal issues we reached out to Stracci Law Group and were assigned to Maryam. She was not only thorough, responsive, and determined to get us the best outcome but it truly felt that she cared about us and what …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Mary Quinn",
+      "message": "Joshua Malher is an amazing attorney!\nHe is a total professional with a great demeanor. Joshua has a way of immediately making you feel at ease and confident. …",
+      "number_stars": 5,
+      "date": "7 months ago"
+    },
+    {
+      "author": "Sean Oconnor",
+      "message": "They came highly recommended from a different attorney. Paul and  Maryam are easy to talk too and very honest people, witch is hard t o find these days. Hot dam they did every they said they would. Total trust in their ability as a complete law firm. THANKS YOU again for everything.",
+      "number_stars": 5,
+      "date": "6 months ago"
+    },
+    {
+      "author": "Beth Braun",
+      "message": "This review comes very early in a case before any resolution, but we were recommended Stracci Law Group by a family member. My brother was dealing with a legal issue that we had no idea how to navigate. I had a whole list of questions ready …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Marissa Rais",
+      "message": "I had the pleasure of working with Paul Stracci as the attorney for a relative, and I couldn't be more impressed. Paul is the epitome of professionalism and expertise. He handled the case with precision and efficiency, ensuring that the job …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Trista Breneman",
+      "message": "Paul Stracci has been my family’s first choice is defense for 20 years now!! He has not only helped myself and several members of my family get the victory in our criminal cases but he has been a friend and truly cared along the way! Paul …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Sam Newton",
+      "message": "From the onset of my case, I have been consistently impressed with the dedication and expertise demonstrated by Peter Fouts and the entire team at the Paul Stracci law firm. Their unwavering support and commitment to my legal matter have …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "doNde Socialmedia",
+      "message": "Attorney Paul Stracci,\nI am writing this note to thank you for the amazing representation in my case. You and your team have been to the highest quality all the way through my case. …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Adam Gray",
+      "message": "Excellent representation by the firm. I would highly recommend them to anyone who needs an attorney!! The girls in the office are sharp, they respond quickly, and they passed along information to the attorneys right away. I was never left …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "veronica cabrales",
+      "message": "Paul Stracci and J Micheal Woods are absolutely amazing. He called and spoke with me on a weekend, listened to everything I had to say and took the time address all my questions and concerns. They always emailed back and kept us on top of …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Nikhil Malik",
+      "message": "We had to use the services of Stracci Law Group for a legal matter. We were assigned Maryrachel as our attorney. I have to say that Maryrachel has been exemplary in every way. She is very prompt with her communication, organized, empathetic …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Maggie Joy Stanton (Dr. MJ)",
+      "message": "Maryam Stewart is a sharp, professional attorney who knows her law. I was impressed with how she went the extra mile to hear her client, research the case, and to represent her client for the truth. I highly recommend Attorney Stewart and her team!",
+      "number_stars": 5,
+      "date": "9 months ago"
+    },
+    {
+      "author": "charles ingram",
+      "message": "This was my first time in need of a lawyer. and I was referred to\nStracci Law group by a Friend,\nWhen I first Walked into the building I was greeted  by a friendly receptionist …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Heather C",
+      "message": "After my own personal experience, I see why Paul and his team have 5 stars. Realistically it should be more. I personally had a few different avenues with my case with a specific deadline created by someone else. Paul and Jen met the date …",
+      "number_stars": 5,
+      "date": "2 years ago"
+    },
+    {
+      "author": "Gonzalo Prado",
+      "message": "Stracci Law Group is one of the best law firms in the region. Paul has represented me on more than one occasion, and each time he exceeded my expectations. He kept me up to date on my case until the end. Paul and his team are very efficient and professional. ⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️ 10 stars because they are that good!",
+      "number_stars": 5,
+      "date": "2 years ago"
+    },
+    {
+      "author": "Tasha J",
+      "message": "I hired Paul Stracci, With only two weeks until the court date Paul started work on the case right away. I was afraid that we would have to get a continuance considering the time frame. But we didn’t. Stracci Law group worked diligently on …",
+      "number_stars": 5,
+      "date": "7 months ago"
+    },
+    {
+      "author": "Ken Jennings",
+      "message": "Outstanding attorneys! 5 years of fighting this with lawyers, and as soon as I dropped them and went to Stracci law,  attorney Maryam started fighting for me like the 3rd gorrila on Noah arc, claiming its spot. Maryam is the sheepdog u need …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Diana Rodriguez",
+      "message": "I was referred to Josh Malher for an eviction I had to file. First time meeting Josh, I was impressed how quickly and professionally everything was handled; esp because time is of the essence in these matters. He answered every text, email …",
+      "number_stars": 5,
+      "date": "a year ago"
+    },
+    {
+      "author": "Jerry S",
+      "message": "I highly recommend Attorney Stracci and his team for any legal matter you may encounter or if you need help in an injury case.  Paul discusses your issue thoroughly and guides you though the process with complete honesty and transparency. …",
+      "number_stars": 5,
+      "date": "2 years ago"
+    },
+    {
+      "author": "Victoria Blossom",
+      "message": "I have used Paul Stracci for all of my legal matters, for years.  He is great and never disappoints. His assistant Jen is always helpful. They are very professional and get the job done. I wouldn’t use anyone else!!! Paul’s representation is worth every penny paid!",
+      "number_stars": 5,
+      "date": "3 years ago"
+    },
+    {
+      "author": "Jeannie Curry",
+      "message": "If I could give Attorney Stracci 10 (out of 5) stars, I truly would. When I was in a crisis legal situation where my life could have fallen apart, he gave me his full attention, listened to me patiently, and obtained for me the best legal …",
+      "number_stars": 5,
+      "date": "2 years ago"
+    }
+  ],
+  "categories": [
+    "Personal injury attorney",
+    "Civil law attorney",
+    "Criminal justice attorney"
+  ],
+  "aboutInfo": [
+    {
+      "title": "Accessibility",
+      "content": [
+        "Wheelchair accessible entrance",
+        "Wheelchair accessible parking lot",
+        "Wheelchair accessible seating"
+      ]
+    },
+    {
+      "title": "Service options",
+      "content": [
+        "Online appointments",
+        "Onsite services",
+        "Language assistance"
+      ]
+    },
+    {
+      "title": "Amenities",
+      "content": [
+        "Restroom"
+      ]
+    },
+    {
+      "title": "Crowd",
+      "content": [
+        "LGBTQ+ friendly",
+        "Transgender safespace"
+      ]
+    },
+    {
+      "title": "Planning",
+      "content": [
+        "Appointment required",
+        "Appointments recommended"
+      ]
+    }
+  ],
+  "place_id": "ChIJfRs59fjuEYgRd8NGRQpdVDk",
+  "location": {
+    "lat": 41.40196340000001,
+    "lng": -87.3362834
+  },
+  "create_date": {
+    "$date": "2025-05-19T16:04:09.399Z"
+  },
+  "update_date": {
+    "$date": "2025-05-19T16:04:09.399Z"
+  },
+  "__v": 0
+}]

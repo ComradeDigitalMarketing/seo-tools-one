@@ -2,6 +2,7 @@
 let coreData = null;
 let pointsData = null;
 let competitorsData = null;
+let gbpData = null; // Добавляем переменную для хранения GBP данных
 let map = null;
 let markers = [];
 let selectedCompetitor = null;
@@ -91,6 +92,7 @@ async function loadTestData() {
             }
             try {
                 console.log('Начинаем загрузку данных...');
+                
                 // Загружаем файлы по одному, чтобы легче отследить ошибку
                 console.log('Загрузка test.subjects.json...');
                 const coreResponse = await fetch('json/test.subjects.json');
@@ -108,6 +110,14 @@ async function loadTestData() {
                 const competitorsResponse = await fetch('json/test.competitorsanalyses.json');
                 if (!competitorsResponse.ok) {
                     throw new Error(`Ошибка HTTP при загрузке test.competitorsanalyses.json: ${competitorsResponse.status}`);
+                }
+                
+                // Загружаем данные GBP
+                console.log('Загрузка it-reports.gbp_data.json...');
+                const gbpResponse = await fetch('json/it-reports.gbp_data.json');
+                if (!gbpResponse.ok) {
+                    console.warn(`Ошибка HTTP при загрузке it-reports.gbp_data.json: ${gbpResponse.status}`);
+                    // Продолжаем выполнение даже если GBP данные не загружены
                 }
                 
                 // Парсинг JSON с проверкой на ошибки
@@ -135,6 +145,18 @@ async function loadTestData() {
                     throw new Error(`Ошибка парсинга JSON test.competitorsanalyses.json: ${e.message}`);
                 }
                 
+                // Парсинг GBP данных
+                let gbpDataJson = null;
+                if (gbpResponse && gbpResponse.ok) {
+                    console.log('Парсинг it-reports.gbp_data.json...');
+                    try {
+                        gbpDataJson = await gbpResponse.json();
+                        console.log('GBP данные успешно загружены');
+                    } catch (e) {
+                        console.warn(`Ошибка парсинга JSON it-reports.gbp_data.json: ${e.message}`);
+                    }
+                }
+                
                 // Проверяем, что все данные правильно загружены
                 if (!Array.isArray(core) || !Array.isArray(competitorsAnalysis)) {
                     throw new Error('Неверный формат данных: core или competitorsAnalysis не являются массивами');
@@ -144,7 +166,8 @@ async function loadTestData() {
                 const jsonData = {
                     core: core[0],
                     pointsData: pointsData,
-                    competitorsAnalysis: competitorsAnalysis[0]
+                    competitorsAnalysis: competitorsAnalysis[0],
+                    gbpData: gbpDataJson && gbpDataJson.length > 0 ? gbpDataJson[0] : null
                 };
                 
                 // Валидация данных
@@ -315,9 +338,14 @@ function loadData(data) {
     coreData = data.core;
     pointsData = data.pointsData;
     competitorsData = data.competitorsAnalysis;
+    gbpData = data.gbpData; // Сохраняем GBP данные
 
     // Отображаем информацию о бизнесе
-    showBusinessInfo();
+    if (gbpData) {
+        showGBPBusinessInfo(); // Если есть GBP данные, используем их
+    } else {
+        showBusinessInfo(); // Иначе используем обычные данные
+    }
     
     // Отображаем рейтинг конкурентов
     showCompetitorsRanking();
@@ -326,7 +354,421 @@ function loadData(data) {
     fillKeywordFilters();
 }
 
-// Отображение информации о бизнесе
+// Отображение информации о бизнесе из GBP данных
+function showGBPBusinessInfo() {
+    if (!gbpData) {
+        console.warn('Нет GBP данных для отображения');
+        console.log('Доступные данные:', { coreData, pointsData, competitorsData, gbpData });
+        showBusinessInfo(); // Используем стандартную функцию, если GBP данных нет
+        return;
+    }
+    
+    console.log('GBP данные:', gbpData);
+    
+    // Получаем контейнер для информации о бизнесе
+    const businessInfoSection = document.getElementById('businessInfoSection');
+    if (!businessInfoSection) {
+        console.error('Не найден контейнер businessInfoSection');
+        return;
+    }
+    
+    // Очищаем секцию перед добавлением информации
+    businessInfoSection.innerHTML = '';
+    
+    // Создаем основную карточку
+    const mainCardHTML = `
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <i class="fas fa-building me-2"></i> Основная информация о бизнесе
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="fw-bold">ID:</label>
+                                <div>${gbpData._id?.$oid || 'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Название:</label>
+                                <div>${gbpData.name || 'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Тип:</label>
+                                <div>${gbpData.type || 'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Неделя:</label>
+                                <div>${gbpData.week || 'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Телефон:</label>
+                                <div>${gbpData.phone || 'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Вебсайт:</label>
+                                <div>${gbpData.website ? 
+                                    `<a href="${gbpData.website}" target="_blank">${gbpData.website}</a>` : 
+                                    'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Основная категория:</label>
+                                <div>${gbpData.mainCategory || 'Нет данных'}</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="fw-bold">Адрес:</label>
+                                <div>${gbpData.address || 'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Ссылка для бронирования:</label>
+                                <div>${gbpData.bookingLink ? 
+                                    `<a href="${gbpData.bookingLink}" target="_blank">${gbpData.bookingLink}</a>` : 
+                                    'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Часовой пояс:</label>
+                                <div>${gbpData.timeZone || 'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Рейтинг:</label>
+                                <div>${gbpData.rating ? 
+                                    `${gbpData.rating} ★ (${gbpData.reviewsCount} отзывов)` : 
+                                    'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Place ID:</label>
+                                <div>${gbpData.place_id || 'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Координаты:</label>
+                                <div>${gbpData.location ? 
+                                    `${gbpData.location.lat}, ${gbpData.location.lng}` : 
+                                    'Нет данных'}</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="fw-bold">Дата создания:</label>
+                                <div>${gbpData.create_date?.$date ? 
+                                    new Date(gbpData.create_date.$date).toLocaleDateString() : 
+                                    'Нет данных'}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    // Добавляем основную карточку
+    businessInfoSection.innerHTML += mainCardHTML;
+    
+    // Если есть изображение, добавляем его
+    if (gbpData.sampleImage) {
+        const imageCardHTML = `
+            <div class="col mt-3">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <i class="fas fa-image me-2"></i> Изображение бизнеса
+                    </div>
+                    <div class="card-body text-center">
+                        <a href="${gbpData.sampleImage}" target="_blank" class="btn btn-outline-primary">
+                            <i class="fas fa-external-link-alt me-2"></i>
+                            Открыть изображение
+                        </a>
+                        <div class="mt-2">
+                            <small class="text-muted">${gbpData.sampleImage}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        businessInfoSection.innerHTML += imageCardHTML;
+    }
+    
+    // Добавляем карточку с категориями
+    if (gbpData.categories && gbpData.categories.length > 0) {
+        const categoriesHTML = gbpData.categories.map(category => 
+            `<span class="badge bg-primary me-1 mb-1">${category}</span>`).join('');
+        
+        const categoriesCardHTML = `
+            <div class="col mt-3">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <i class="fas fa-tags me-2"></i> Категории
+                    </div>
+                    <div class="card-body">
+                        ${categoriesHTML}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        businessInfoSection.innerHTML += categoriesCardHTML;
+    }
+    
+    // Добавляем карточку с часами работы
+    if (gbpData.openingHours) {
+        const hoursCardHTML = `
+            <div class="col mt-3">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <i class="fas fa-clock me-2"></i> Часы работы
+                    </div>
+                    <div class="card-body">
+                        ${formatOpeningHours(gbpData.openingHours)}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        businessInfoSection.innerHTML += hoursCardHTML;
+    }
+    
+    // Добавляем карточку с дополнительной информацией
+    if (gbpData.aboutInfo && gbpData.aboutInfo.length > 0) {
+        let aboutInfoHTML = '';
+        
+        gbpData.aboutInfo.forEach(info => {
+            if (info.title && info.content && info.content.length > 0) {
+                aboutInfoHTML += `
+                    <div class="mb-3">
+                        <h6 class="fw-bold">${info.title}</h6>
+                        <ul class="list-group">
+                            ${info.content.map(item => `<li class="list-group-item">${item}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+        });
+        
+        if (aboutInfoHTML) {
+            const aboutCardHTML = `
+                <div class="col mt-3">
+                    <div class="card">
+                        <div class="card-header bg-info text-white">
+                            <i class="fas fa-info-circle me-2"></i> Дополнительная информация
+                        </div>
+                        <div class="card-body">
+                            ${aboutInfoHTML}
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            businessInfoSection.innerHTML += aboutCardHTML;
+        }
+    }
+    
+    // Добавляем карточку со всеми изображениями
+    if (gbpData.images && gbpData.images.length > 0) {
+        let imagesHTML = '<ul class="list-group">';
+        
+        gbpData.images.forEach(image => {
+            imagesHTML += `
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>${image.name}</strong>
+                    </div>
+                    <a href="${image.img}" target="_blank" class="btn btn-sm btn-outline-primary">
+                        <i class="fas fa-external-link-alt me-1"></i>
+                        Открыть
+                    </a>
+                </li>
+            `;
+        });
+        
+        imagesHTML += '</ul>';
+        
+        const allImagesCardHTML = `
+            <div class="col mt-3">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <i class="fas fa-images me-2"></i> Все изображения (${gbpData.images.length})
+                    </div>
+                    <div class="card-body">
+                        ${imagesHTML}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        businessInfoSection.innerHTML += allImagesCardHTML;
+    }
+    
+    // Добавляем карточку с отзывами
+    if (gbpData.reviews && gbpData.reviews.length > 0) {
+        let reviewsHTML = '';
+        
+        // Ограничиваем количество отображаемых отзывов до 5
+        const displayedReviews = gbpData.reviews.slice(0, 5);
+        
+        displayedReviews.forEach(review => {
+            // Создаем звезды для рейтинга
+            const stars = '★'.repeat(review.number_stars) + '☆'.repeat(5 - review.number_stars);
+            
+            reviewsHTML += `
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 class="fw-bold mb-0">${review.author}</h6>
+                            <span class="text-warning">${stars}</span>
+                        </div>
+                        <p class="mb-1 text-muted small">${review.date}</p>
+                        <p class="card-text">${review.message}</p>
+                    </div>
+                </div>
+            `;
+        });
+        
+        const reviewsCardHTML = `
+            <div class="col mt-3">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <i class="fas fa-comments me-2"></i> Последние отзывы (${gbpData.reviews.length} всего)
+                    </div>
+                    <div class="card-body">
+                        ${reviewsHTML}
+                        ${gbpData.reviews.length > 5 ? 
+                            `<button class="btn btn-outline-primary mt-2" onclick="showAllReviews()">Показать все ${gbpData.reviews.length} отзывов</button>` : 
+                            ''}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        businessInfoSection.innerHTML += reviewsCardHTML;
+    }
+    
+    // Добавляем карточку с ключевыми словами из отзывов
+    if (gbpData.reviewsKeywords && gbpData.reviewsKeywords.length > 0) {
+        // Сортируем ключевые слова по частоте упоминания (от большего к меньшему)
+        const sortedKeywords = [...gbpData.reviewsKeywords].sort((a, b) => 
+            parseInt(b.number) - parseInt(a.number)
+        );
+        
+        let keywordsHTML = '<div class="row">';
+        
+        sortedKeywords.forEach(keyword => {
+            // Рассчитываем размер шрифта в зависимости от частоты (от 1.0 до 2.0)
+            const fontSize = 1.0 + Math.min(1.0, parseInt(keyword.number) / 30);
+            // Определяем интенсивность цвета в зависимости от частоты
+            const colorIntensity = Math.min(90, 40 + parseInt(keyword.number) * 2);
+            
+            keywordsHTML += `
+                <div class="col-md-4 mb-2">
+                    <div class="d-flex align-items-center">
+                        <span class="badge bg-primary me-2">${keyword.number}</span>
+                        <span style="font-size: ${fontSize}rem; color: hsl(210, ${colorIntensity}%, 50%);">
+                            ${keyword.key}
+                        </span>
+                    </div>
+                </div>
+            `;
+        });
+        
+        keywordsHTML += '</div>';
+        
+        const keywordsCardHTML = `
+            <div class="col mt-3">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <i class="fas fa-cloud me-2"></i> Ключевые слова из отзывов
+                    </div>
+                    <div class="card-body">
+                        ${keywordsHTML}
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        businessInfoSection.innerHTML += keywordsCardHTML;
+    }
+    
+    // Отображаем секцию
+    businessInfoSection.style.display = 'block';
+    businessInfoSection.classList.add('fade-in');
+}
+
+// Функция для отображения всех отзывов
+function showAllReviews() {
+    if (!gbpData || !gbpData.reviews) return;
+    
+    const modal = new bootstrap.Modal(document.getElementById('allReviewsModal') || createAllReviewsModal());
+    
+    // Заполняем модальное окно отзывами
+    const reviewsContainer = document.getElementById('allReviewsContainer');
+    if (!reviewsContainer) return;
+    
+    let reviewsHTML = '';
+    
+    gbpData.reviews.forEach(review => {
+        // Создаем звезды для рейтинга
+        const stars = '★'.repeat(review.number_stars) + '☆'.repeat(5 - review.number_stars);
+        
+        reviewsHTML += `
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <h6 class="fw-bold mb-0">${review.author}</h6>
+                        <span class="text-warning">${stars}</span>
+                    </div>
+                    <p class="mb-1 text-muted small">${review.date}</p>
+                    <p class="card-text">${review.message}</p>
+                </div>
+            </div>
+        `;
+    });
+    
+    reviewsContainer.innerHTML = reviewsHTML;
+    
+    // Отображаем модальное окно
+    modal.show();
+}
+
+// Создаем модальное окно для отзывов, если его нет
+function createAllReviewsModal() {
+    const modalHTML = `
+        <div class="modal fade" id="allReviewsModal" tabindex="-1" aria-labelledby="allReviewsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header bg-info text-white">
+                        <h5 class="modal-title" id="allReviewsModalLabel">
+                            <i class="fas fa-comments me-2"></i> Все отзывы
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="allReviewsContainer"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+    return document.getElementById('allReviewsModal');
+}
+
+// Форматирование часов работы для отображения
+function formatOpeningHours(openingHours) {
+    if (!openingHours) return 'Нет данных';
+    
+    let html = '<ul class="list-unstyled mb-0">';
+    
+    for (const [day, hours] of Object.entries(openingHours)) {
+        html += `<li><strong>${day}:</strong> ${hours}</li>`;
+    }
+    
+    html += '</ul>';
+    return html;
+}
+
+// Отображение информации о бизнесе (стандартный вариант)
 function showBusinessInfo() {
     const businessNameEl = document.getElementById('businessName');
     const businessKeywordsEl = document.getElementById('businessKeywords');

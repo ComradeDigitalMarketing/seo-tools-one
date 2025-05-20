@@ -1022,14 +1022,28 @@ function showCompetitorsRanking() {
     // Преобразуем данные для Grid.js
     const gridData = competitors.map((competitor, index) => {
         // Рассчитываем дополнительные данные
-        const { bestRank, worstRank } = calculateCompetitorStats(competitor);
+        const stats = calculateCompetitorStats(competitor);
         
         return [
             index + 1,
             competitor.name,
             formatRankHTML(competitor.averageRank),
-            formatRankHTML(bestRank),
-            formatRankHTML(worstRank)
+            formatRankHTML(stats.bestRank),
+            formatRankHTML(stats.worstRank),
+            // Добавляем колонку с количеством точек с позицией < 20
+            `<div class="d-flex align-items-center">
+                <span class="me-2">${stats.visiblePointsCount} из ${stats.totalPositionsCount}</span>
+                <div class="progress flex-grow-1" style="height: 8px; width: 80px;">
+                    <div class="progress-bar ${getVisibilityColorClass(stats.visibilityPercent)}" 
+                        role="progressbar" 
+                        style="width: ${stats.visibilityPercent}%;"
+                        aria-valuenow="${stats.visibilityPercent}" 
+                        aria-valuemin="0" 
+                        aria-valuemax="100">
+                    </div>
+                </div>
+                <span class="ms-2 small">${stats.visibilityPercent}%</span>
+            </div>`
         ];
     });
 
@@ -1061,6 +1075,19 @@ function showCompetitorsRanking() {
                     name: 'Худшая позиция', 
                     width: '140px',
                     formatter: (cell) => gridjs.html(cell)
+                },
+                {
+                    name: 'Видимых точек', 
+                    width: '200px',
+                    formatter: (cell) => gridjs.html(cell),
+                    sort: {
+                        compare: (a, b) => {
+                            // Извлекаем числа из HTML для сортировки
+                            const percentA = parseInt(a.match(/(\d+)%/)[1]);
+                            const percentB = parseInt(b.match(/(\d+)%/)[1]);
+                            return percentA - percentB;
+                        }
+                    }
                 }
             ]
         }).forceRender();
@@ -1104,6 +1131,19 @@ function showCompetitorsRanking() {
                             return rankA - rankB;
                         }
                     }
+                },
+                {
+                    name: 'Видимых точек', 
+                    width: '200px',
+                    formatter: (cell) => gridjs.html(cell),
+                    sort: {
+                        compare: (a, b) => {
+                            // Извлекаем числа из HTML для сортировки
+                            const percentA = parseInt(a.match(/(\d+)%/)[1]);
+                            const percentB = parseInt(b.match(/(\d+)%/)[1]);
+                            return percentA - percentB;
+                        }
+                    }
                 }
             ],
             data: gridData,
@@ -1140,6 +1180,14 @@ function showCompetitorsRanking() {
     }, 300);
 }
 
+// Функция для определения класса цвета в зависимости от процента видимости
+function getVisibilityColorClass(percent) {
+    if (percent >= 75) return 'bg-success';
+    if (percent >= 50) return 'bg-info';
+    if (percent >= 25) return 'bg-warning';
+    return 'bg-danger';
+}
+
 // Новая функция для настройки событий таблицы конкурентов
 function setupCompetitorsTableEvents() {
     if (!competitorsGrid) return;
@@ -1167,10 +1215,13 @@ function setupCompetitorsTableEvents() {
 function calculateCompetitorStats(competitor) {
     let bestRank = 100;
     let worstRank = 0;
+    let visiblePointsCount = 0; // Количество точек с позицией < 20
+    let totalPositionsCount = 0; // Общее количество позиций
     
     competitor.positions.forEach(position => {
         position.points.forEach(point => {
             const rankNum = rankToNumber(point.rank);
+            totalPositionsCount++;
             
             if (rankNum < bestRank) {
                 bestRank = rankNum;
@@ -1179,10 +1230,25 @@ function calculateCompetitorStats(competitor) {
             if (rankNum > worstRank) {
                 worstRank = rankNum;
             }
+            
+            // Подсчитываем точки с позицией меньше 20
+            if (rankNum < 20) {
+                visiblePointsCount++;
+            }
         });
     });
     
-    return { bestRank, worstRank };
+    // Рассчитываем процент видимости
+    const visibilityPercent = totalPositionsCount > 0 ? 
+        Math.round((visiblePointsCount / totalPositionsCount) * 100) : 0;
+    
+    return { 
+        bestRank, 
+        worstRank, 
+        visiblePointsCount, 
+        totalPositionsCount,
+        visibilityPercent
+    };
 }
 
 // Фильтрация таблицы конкурентов по ключевому слову
